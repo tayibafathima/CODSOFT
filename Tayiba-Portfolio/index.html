@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayiba Fathima | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Tayiba Fathima</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Tayiba Fathima</h1>
+            <p>Front-end enthusiast crafting clean, modern & responsive web experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img
+                      src="./images/Tayiba-image.png"
+                      alt="Tayiba Fathima"
+                    />
+                </div>
+                <div class="about-text">
+                    <h3>Front-End Developer & UI Tinkerer</h3>
+                    <p>
+                        I'm a self-taught developer based in Bengaluru, Karnataka, passionate
+                        about turning ideas into interactive realities. My journey started
+                        with HTML & CSS and quickly expanded to JavaScript, React, and
+                        modern tooling.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new cafés, reading
+                        mystery novels, or contributing to open-source projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3 / Tailwind</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="project-img">
+                        <img
+                          src="./images/portfolio-image.jpg"
+                          alt="Project 1"
+                        />
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            A responsive personal portfolio built with pure HTML and CSS.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img">
+                        <img
+                          src="./images/in-progress-image.jpg"
+                          alt="Project 2"
+                        />
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>
+                            React app that fetches real-time weather data using the
+                            OpenWeatherMap API.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img">
+                        <img
+                          src="./images/in-progress-image.jpg"
+                          alt="Project 3"
+                        />
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Manager</h3>
+                        <p>
+                            A to-do list application with CRUD operations built in
+                            JavaScript and localStorage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <p>
+                    You can download my concise one-page résumé to learn more about my
+                    experience and education.
+                </p>
+                <!-- Replace # with actual path to your PDF -->
+                <a href="./images/Tayiba-resume.pdf" class="btn" download>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>tayibafathima2005@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bengaluru, Karnataka</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© <span id="year"></span> Tayiba Fathima. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+       // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))
+                        .scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+       // Simple form handler
+        document.getElementById('contactForm').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
