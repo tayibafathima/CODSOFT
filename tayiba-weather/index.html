@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Modern Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="py-6 px-4 md:px-12 flex justify-between items-center">
+        <div class="flex items-center">
+            <i class="fas fa-cloud-sun text-3xl text-blue-300 mr-3"></i>
+            <span class="title-font text-2xl font-bold bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">SkyCast</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#features" class="text-white hover:text-blue-200 transition">Features</a>
+            <a href="#how-it-works" class="text-white hover:text-blue-200 transition">How It Works</a>
+            <a href="#testimonials" class="text-white hover:text-blue-200 transition">Testimonials</a>
+        </div>
+        <button class="btn-grad text-white px-6 py-2 rounded-full font-medium">Get App</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="flex-grow flex flex-col md:flex-row items-center justify-center px-6 md:px-12 py-12 md:py-24">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="title-font text-4xl md:text-6xl font-bold mb-6 leading-tight">Weather Forecast <span class="bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">Made Simple</span></h1>
+            <p class="text-lg text-blue-100 mb-8 max-w-lg">Get hyper-accurate weather forecasts with beautiful visualizations. Plan your day with confidence using our AI-powered weather predictions.</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="btn-grad text-white px-8 py-3 rounded-full font-medium flex items-center justify-center">
+                    <i class="fab fa-apple mr-2 text-xl"></i> Download for iOS
+                </button>
+                <button class="bg-white text-blue-900 px-8 py-3 rounded-full font-medium flex items-center justify-center">
+                    <i class="fab fa-google-play mr-2 text-xl"></i> Get on Android
+                </button>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate-float">
+            <div class="weather-card p-8 w-full max-w-md">
+                <div class="flex justify-between items-center mb-8">
+                    <div>
+                        <h2 class="text-2xl font-semibold">New York, NY</h2>
+                        <p class="text-blue-100">Friday, June 10</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xl">Partly Cloudy</p>
+                        <p class="text-blue-100">H: 78° L: 62°</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between mb-8">
+                    <div class="temperature">72°</div>
+                    <div class="weather-icon">
+                        <i class="fas fa-cloud-sun text-6xl text-yellow-200"></i>
+                    </div>
+                </div>
+                <div class="flex justify-between text-center">
+                    <div>
+                        <p class="text-sm text-blue-100">Now</p>
+                        <i class="fas fa-cloud-sun text-2xl my-2 text-yellow-200"></i>
+                        <p class="font-medium">72°</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-blue-100">3PM</p>
+                        <i class="fas fa-sun text-2xl my-2 text-yellow-300"></i>
+                        <p class="font-medium">76°</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-blue-100">6PM</p>
+                        <i class="fas fa-cloud text-2xl my-2 text-blue-200"></i>
+                        <p class="font-medium">70°</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-blue-100">9PM</p>
+                        <i class="fas fa-moon text-2xl my-2 text-blue-100"></i>
+                        <p class="font-medium">65°</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-blue-100">12AM</p>
+                        <i class="fas fa-cloud-moon text-2xl my-2 text-blue-100"></i>
+                        <p class="font-medium">62°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-6 md:px-12 bg-gradient-to-b from-blue-900/30 to-blue-900/10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center mb-4">Why Choose SkyCast</h2>
+            <p class="text-center text-blue-100 max-w-2xl mx-auto mb-12">Our app provides the most accurate weather data with beautiful visualizations and intuitive interface.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="weather-card p-8">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-bolt text-xl text-yellow-300"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real-time Alerts</h3>
+                    <p class="text-blue-100">Get instant notifications for severe weather conditions like storms, heavy rain, or extreme temperatures.</p>
+                </div>
+                <div class="weather-card p-8">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-map-marked-alt text-xl text-blue-300"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hyperlocal Forecasts</h3>
+                    <p class="text-blue-100">Precise weather predictions for your exact location, not just your city. Know if it will rain on your street.</p>
+                </div>
+                <div class="weather-card p-8">
+                    <div class="feature-icon mb-4">
+                        <i class="fas fa-chart-line text-xl text-purple-300"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Detailed Analytics</h3>
+                    <p class="text-blue-100">View historical weather data and trends to better understand climate patterns in your area.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center mb-4">How It Works</h2>
+            <p class="text-center text-blue-100 max-w-2xl mx-auto mb-12">Get accurate weather information in just three simple steps.</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="flex items-start mb-6">
+                        <div class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Enable Location</h3>
+                            <p class="text-blue-100">Allow SkyCast to access your location for the most accurate local weather data.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <div class="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Customize Your View</h3>
+                            <p class="text-blue-100">Choose between different display modes and the information you want to see.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-pink-500 rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Get Weather Insights</h3>
+                            <p class="text-blue-100">View detailed forecasts, hourly predictions, and long-term trends.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="weather-card p-6 w-full max-w-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="relative w-full">
+                                <input type="text" placeholder="Search location..." class="search-input w-full px-4 py-3 rounded-full">
+                                <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-blue-100">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h3 class="text-xl font-semibold">San Francisco</h3>
+                                <p class="text-blue-100">Sunny • 68°F</p>
+                            </div>
+                            <div class="text-4xl text-yellow-300">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 text-center">
+                            <div class="p-2">
+                                <p class="text-sm text-blue-100">Mon</p>
+                                <i class="fas fa-sun text-xl my-2 text-yellow-300"></i>
+                                <p class="font-medium">72°</p>
+                            </div>
+                            <div class="p-2">
+                                <p class="text-sm text-blue-100">Tue</p>
+                                <i class="fas fa-cloud-sun text-xl my-2 text-blue-200"></i>
+                                <p class="font-medium">68°</p>
+                            </div>
+                            <div class="p-2">
+                                <p class="text-sm text-blue-100">Wed</p>
+                                <i class="fas fa-cloud-rain text-xl my-2 text-blue-300"></i>
+                                <p class="font-medium">64°</p>
+                            </div>
+                            <div class="p-2">
+                                <p class="text-sm text-blue-100">Thu</p>
+                                <i class="fas fa-cloud text-xl my-2 text-blue-100"></i>
+                                <p class="font-medium">66°</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 px-6 md:px-12 bg-gradient-to-b from-blue-900/10 to-blue-900/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="title-font text-3xl md:text-4xl font-bold text-center mb-4">What Our Users Say</h2>
+            <p class="text-center text-blue-100 max-w-2xl mx-auto mb-12">Don't just take our word for it. Here's what our users have to say about SkyCast.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="weather-card p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-sm text-blue-100">Travel Blogger</p>
+                        </div>
+                    </div>
+                    <p class="text-blue-100">"As someone who travels constantly, SkyCast has become my go-to weather app. The hyperlocal forecasts are incredibly accurate and have saved me from getting caught in unexpected rain showers multiple times."</p>
+                    <div class="flex mt-4 text-yellow-300">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="weather-card p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-sm text-blue-100">Outdoor Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="text-blue-100">"The detailed wind and precipitation predictions are perfect for planning my hiking and camping trips. I've tried many weather apps, but SkyCast's interface is by far the most intuitive and beautiful."</p>
+                    <div class="flex mt-4 text-yellow-300">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="weather-card p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Emily Rodriguez</h4>
+                            <p class="text-sm text-blue-100">Event Planner</p>
+                        </div>
+                    </div>
+                    <p class="text-blue-100">"Planning outdoor events requires precise weather information. SkyCast's 24-hour forecast has been spot on every time, allowing me to make last-minute adjustments with confidence."</p>
+                    <div class="flex mt-4 text-yellow-300">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="title-font text-3xl md:text-5xl font-bold mb-6">Ready to Experience Better Weather Forecasts?</h2>
+            <p class="text-xl text-blue-100 mb-8">Download SkyCast today and never be caught off guard by the weather again.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="btn-grad text-white px-8 py-4 rounded-full font-medium flex items-center justify-center">
+                    <i class="fab fa-apple mr-3 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs">Download on the</div>
+                        <div class="text-lg">App Store</div>
+                    </div>
+                </button>
+                <button class="bg-white text-blue-900 px-8 py-4 rounded-full font-medium flex items-center justify-center">
+                    <i class="fab fa-google-play mr-3 text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs">Get it on</div>
+                        <div class="text-lg">Google Play</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 md:px-12 bg-blue-900/50">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-cloud-sun text-2xl text-blue-300 mr-3"></i>
+                    <span class="title-font text-xl font-bold">SkyCast</span>
+                </div>
+                <p class="text-blue-100 mb-4">The most accurate and beautiful weather app for your everyday needs.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-100 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-blue-100 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-blue-100 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="title-font text-lg font-semibold mb-4">Product</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-100 hover:text-white">Features</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Pricing</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Download</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">API</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="title-font text-lg font-semibold mb-4">Company</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-100 hover:text-white">About</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Blog</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Careers</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="title-font text-lg font-semibold mb-4">Support</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-blue-100 hover:text-white">Help Center</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Community</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-blue-100 hover:text-white">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-blue-800 text-center text-blue-100">
+            <p>© 2023 SkyCast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple weather data fetch demonstration
+        document.addEventListener('DOMContentLoaded', function() {
+            // This would be replaced with actual API calls in a real app
+            console.log('Weather app landing page loaded');
+            
+            // Example of dynamic weather update
+            const weatherCards = document.querySelectorAll('.weather-card');
+            weatherCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+            
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.weather-card, section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
